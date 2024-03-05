@@ -1,0 +1,25 @@
+div p {
+    font-weight:bold;
+    color:blue;
+}
+
+div h2{
+    color:purple;
+    font-size: 28px;
+}
+
+div table, td, th{
+    border-color: darkred; /*This formats the table*/
+}
+#third-paragraph{
+    font-style:italic;
+    color:hotpink;
+}
+.centered {
+    text-align: center; /*This centers and changes the color for the heading*/
+    color:mediumslateblue;
+}
+.logo{
+    width: 200px; /*this creates a style class for the logo*/
+    height: auto;
+}
