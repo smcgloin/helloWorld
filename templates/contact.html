@@ -5,8 +5,12 @@
     <title>Contact</title>
 </head>
 <body>
-<h1>Contact Information</h1>
-
+<!-- Link to style of base.html sheet -->
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<h3>Fill Out Form</h3>
+    <!-- Information displays once form submitted -->
     {% if form_submitted %}
         <div class="col-md-6">
             <h2>Thank you for completing our form!</h2>
@@ -42,6 +46,7 @@
             <p>{{ request.form.get("phone")}}</p>
         </div>
     {% endif %}
+<!-- Input form information -->
 <form class="row g-3" action="{{ url_for('contact') }}" method="post">
   <div class="col-md-6">
     <label for="first_name" class="form-label">First Name</label>
@@ -67,3 +72,4 @@
 </form>
 </body>
 </html>
+{% endblock %}
