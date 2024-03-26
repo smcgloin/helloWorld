@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Favorite Course</title>
+    {% extends "base.html" %}
+    {% block title %}Favorite Course{% endblock %}
 </head>
 <body>
 <!-- Link to styling in base.html -->
-{% extends "base.html" %}
-{% block title %}Favorite Course{% endblock %}
-{% block content %}
-#Variables to get from url
-My favorite course is: {{ subject }} {{ course_number }}
-{% endblock %}
+    {% block content %}
+    #Variables to get from url
+    My favorite course is: {{ subject }} {{ course_number }}
+    {% endblock %}
 </body>
 </html>
