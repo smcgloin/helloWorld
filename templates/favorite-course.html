@@ -5,6 +5,12 @@
     <title>Favorite Course</title>
 </head>
 <body>
+<!-- Link to styling in base.html -->
+{% extends "base.html" %}
+{% block title %}Favorite Course{% endblock %}
+{% block content %}
+#Variables to get from url
 My favorite course is: {{ subject }} {{ course_number }}
+{% endblock %}
 </body>
 </html>
